@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1f242d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.login-container {
+  background-color: #323946;
+  border: 5px solid lightskyblue;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(133, 48, 48, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  max-width: 90%;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  color: white;
+  background-color: #323946;
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  transition: border-color 0.3s; /* Add transition for smooth effect */
+}
+
+.login-form input:focus {
+  border-color: #0ef; /* Change border color on focus */
+  box-shadow: 0 0 8px #0ef; /* Add a glow effect using box-shadow */
+  outline: none; /* Remove default focus outline */
+}
+
+.login-form button {
+  background-color: #0ef;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container h2{
+  color: white;
+}
+
+.login-form button:hover {
+  background-color: lightskyblue;
+}
